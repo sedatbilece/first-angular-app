@@ -5,7 +5,12 @@
 <main>
     <ul>
         <li>
-            <app-user *ngFor="let user of users" [avatar]="user.avatar" [name]="user.name"></app-user>
+            <app-user *ngFor="let user of users" 
+            [avatar]="user.avatar" 
+            [name]="user.name" 
+            [id]="user.id"
+            (userSelected)="onUserSelected($event)">
+            </app-user>
         </li>
     </ul>
 </main>
