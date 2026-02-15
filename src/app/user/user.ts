@@ -1,4 +1,4 @@
-import { Component ,input,computed,Output,EventEmitter} from '@angular/core';
+import { Component ,input,computed,Output,EventEmitter,output} from '@angular/core';
 import { DUMMY_USERS } from '../../dummy-user';
 
 @Component({
@@ -12,7 +12,8 @@ export class User {
   avatar = input.required<string>(); 
   name = input.required<string>();
   id = input.required<string>();
-  @Output() userSelected = new EventEmitter<string>();
+  //@Output() userSelected = new EventEmitter<string>();
+  userSelected = output<string>();
 
   imagePath = computed(() => 'assets/users/' + this.avatar());
 
