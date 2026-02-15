@@ -5,6 +5,12 @@ import { User } from './user/user';
 import { Tasks } from './tasks/tasks';
 import { DUMMY_USERS } from '../dummy-user';
 
+type UserType = {
+  id: string;
+  name: string;
+  avatar: string;
+};
+
 @Component({
   selector: 'app-root',
   imports: [CommonModule, Header, User, Tasks],
@@ -14,13 +20,13 @@ import { DUMMY_USERS } from '../dummy-user';
 export class App {
   protected readonly title = signal('first-angular-app');
   protected readonly users = DUMMY_USERS;
-  selectedUserName = signal<string | undefined>(undefined);
+  selectedUser = signal<UserType | undefined>(undefined);
 
   onUserSelected(id: string) {
     console.log('User selected:', id);
     const selectedUser = this.users.find(user => user.id === id);
     if (selectedUser) {
-      this.selectedUserName.set(selectedUser.name);
+      this.selectedUser.set(selectedUser);
     }
   }
 }

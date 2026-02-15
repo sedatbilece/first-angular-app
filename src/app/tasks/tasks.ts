@@ -1,5 +1,11 @@
 import { Component, input } from '@angular/core';
 
+type UserType = {
+  id: string;
+  name: string;
+  avatar: string;
+};
+
 @Component({
   selector: 'app-tasks',
   imports: [],
@@ -7,5 +13,5 @@ import { Component, input } from '@angular/core';
   styleUrl: './tasks.css',
 })
 export class Tasks {
-  name = input.required<string>();
+  user = input.required<UserType>();
 }

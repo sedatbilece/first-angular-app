@@ -14,7 +14,7 @@
         </li>
     </ul>
 
-    @if (selectedUserName()) {
-        <app-tasks [name]="selectedUserName()!"></app-tasks>
+    @if (selectedUser()) {
+        <app-tasks [user]="selectedUser()!"></app-tasks>
     }
 </main>
