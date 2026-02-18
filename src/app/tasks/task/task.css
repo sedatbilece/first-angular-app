@@ -13,7 +13,7 @@ header {
 
 h3 {
   margin: 0;
-  color: #4a1a2a;
+  color: #3D2558;
   font-size: 1.05rem;
   font-weight: 700;
   letter-spacing: 0.3px;
@@ -21,16 +21,16 @@ h3 {
 
 time {
   font-size: 0.8rem;
-  color: #b05a6a;
+  color: #7A6B9A;
   font-weight: 500;
-  background: rgba(232, 85, 109, 0.08);
+  background: rgba(167, 171, 222, 0.12);
   padding: 0.2rem 0.6rem;
   border-radius: 6px;
 }
 
 .summary {
   margin: 0;
-  color: #6b3a4a;
+  color: #5C4070;
   font-size: 0.9rem;
   line-height: 1.5;
 }
@@ -43,7 +43,7 @@ time {
 
 .complete-btn {
   padding: 0.45rem 1.2rem;
-  background: linear-gradient(135deg, #e8556d 0%, #f2788a 100%);
+  background: linear-gradient(135deg, #A7ABDE 0%, #C8CEEE 100%);
   color: #fff;
   border: none;
   border-radius: 8px;
@@ -52,14 +52,14 @@ time {
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 3px 10px rgba(200, 60, 80, 0.25);
+  box-shadow: 0 3px 10px rgba(167, 171, 222, 0.3);
   letter-spacing: 0.3px;
 }
 
 .complete-btn:hover {
-  background: linear-gradient(135deg, #d44460 0%, #e8556d 100%);
+  background: linear-gradient(135deg, #8E93CC 0%, #A7ABDE 100%);
   transform: translateY(-1px);
-  box-shadow: 0 5px 15px rgba(200, 60, 80, 0.4);
+  box-shadow: 0 5px 15px rgba(167, 171, 222, 0.45);
 }
 
 .complete-btn:active {

@@ -1,8 +1,8 @@
 section {
-  background: linear-gradient(145deg, #fce4e8 0%, #f9cdd3 100%);
+  background: linear-gradient(145deg, #E8DAF0 0%, #D8BEE5 100%);
   border-radius: 16px;
   padding: 2rem;
-  box-shadow: 0 8px 32px rgba(200, 60, 80, 0.15);
+  box-shadow: 0 8px 32px rgba(167, 171, 222, 0.2);
 }
 
 header {
@@ -14,7 +14,7 @@ header {
 
 h2 {
   margin: 0;
-  color: #6b2035;
+  color: #3D2558;
   font-size: 1.4rem;
   font-weight: 700;
   letter-spacing: 0.5px;
@@ -22,7 +22,7 @@ h2 {
 
 .add-btn {
   padding: 0.6rem 1.4rem;
-  background: linear-gradient(135deg, #e8556d 0%, #f2788a 100%);
+  background: linear-gradient(135deg, #A7ABDE 0%, #C8CEEE 100%);
   color: #fff;
   border: none;
   border-radius: 10px;
@@ -31,14 +31,14 @@ h2 {
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(200, 60, 80, 0.3);
+  box-shadow: 0 4px 15px rgba(167, 171, 222, 0.35);
   letter-spacing: 0.3px;
 }
 
 .add-btn:hover {
-  background: linear-gradient(135deg, #d44460 0%, #e8556d 100%);
+  background: linear-gradient(135deg, #8E93CC 0%, #A7ABDE 100%);
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(200, 60, 80, 0.45);
+  box-shadow: 0 6px 20px rgba(167, 171, 222, 0.5);
 }
 
 .add-btn:active {
@@ -62,18 +62,18 @@ li {
   background: #fff;
   border-radius: 12px;
   transition: all 0.3s ease;
-  box-shadow: 0 2px 8px rgba(200, 60, 80, 0.08);
-  border-left: 4px solid #f2788a;
+  box-shadow: 0 2px 8px rgba(167, 171, 222, 0.12);
+  border-left: 4px solid #C8CEEE;
 }
 
 li:hover {
   transform: translateX(4px);
-  box-shadow: 0 4px 16px rgba(200, 60, 80, 0.18);
-  border-left-color: #e8556d;
+  box-shadow: 0 4px 16px rgba(167, 171, 222, 0.25);
+  border-left-color: #A7ABDE;
 }
 
 .task-text {
-  color: #4a1a2a;
+  color: #3D2558;
   font-size: 1rem;
   font-weight: 500;
   letter-spacing: 0.3px;
@@ -86,9 +86,9 @@ li:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #fce4e8;
-  color: #e8556d;
-  border: 2px solid rgba(232, 85, 109, 0.25);
+  background: #E8DAF0;
+  color: #A7ABDE;
+  border: 2px solid rgba(167, 171, 222, 0.3);
   border-radius: 50%;
   font-size: 1rem;
   cursor: pointer;
@@ -98,11 +98,11 @@ li:hover {
 }
 
 .complete-btn:hover {
-  background: linear-gradient(135deg, #e8556d 0%, #f2788a 100%);
+  background: linear-gradient(135deg, #A7ABDE 0%, #C8CEEE 100%);
   color: #fff;
   border-color: transparent;
   transform: scale(1.1);
-  box-shadow: 0 4px 15px rgba(200, 60, 80, 0.35);
+  box-shadow: 0 4px 15px rgba(167, 171, 222, 0.45);
 }
 
 .complete-btn:active {

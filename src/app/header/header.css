@@ -1,8 +1,8 @@
 .header {
-  background: linear-gradient(135deg, #e8556d 0%, #f2788a 50%, #f7a0ad 100%);
+  background: linear-gradient(135deg, #A7ABDE 0%, #C8CEEE 50%, #D8BEE5 100%);
   padding: 1.25rem 2rem;
   border-radius: 0 0 20px 20px;
-  box-shadow: 0 4px 20px rgba(200, 60, 80, 0.25);
+  box-shadow: 0 4px 20px rgba(167, 171, 222, 0.35);
   display: flex;
   align-items: center;
   justify-content: center;

@@ -1,13 +1,13 @@
 div {
   border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(200, 60, 80, 0.12);
+  box-shadow: 0 2px 8px rgba(167, 171, 222, 0.2);
   overflow: hidden;
   transition: all 0.3s ease;
 }
 
 div:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 16px rgba(200, 60, 80, 0.22);
+  box-shadow: 0 4px 16px rgba(167, 171, 222, 0.35);
 }
 
 button {
@@ -15,8 +15,8 @@ button {
   align-items: center;
   gap: 1rem;
   padding: 0.75rem 1rem;
-  background: linear-gradient(135deg, #fce4e8 0%, #f9cdd3 100%);
-  color: #6b2035;
+  background: linear-gradient(135deg, #E8DAF0 0%, #D8BEE5 100%);
+  color: #3D2558;
   border: none;
   font: inherit;
   cursor: pointer;
@@ -27,7 +27,7 @@ button {
 }
 
 button:hover {
-  background: linear-gradient(135deg, #f2788a 0%, #e8556d 100%);
+  background: linear-gradient(135deg, #C8CEEE 0%, #A7ABDE 100%);
   color: #fff;
   transform: scale(1.02);
 }
@@ -48,7 +48,7 @@ img {
 
 button:hover img {
   border-color: #fff;
-  box-shadow: 0 4px 12px rgba(200, 60, 80, 0.35);
+  box-shadow: 0 4px 12px rgba(167, 171, 222, 0.45);
 }
 
 span {
