@@ -1,5 +1,5 @@
 import { Component, input } from '@angular/core';
-
+import { Task } from './task/task';
 type UserType = {
   id: string;
   name: string;
@@ -8,7 +8,7 @@ type UserType = {
 
 @Component({
   selector: 'app-tasks',
-  imports: [],
+  imports: [Task],
   templateUrl: './tasks.html',
   styleUrl: './tasks.css',
 })
