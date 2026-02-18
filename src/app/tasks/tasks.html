@@ -1,5 +1,17 @@
-<div class="tasks-container">
-  <h2>{{ user().name }}'s Tasks</h2>
-  <p>Selected user: <strong>{{ user().name }}</strong></p>
-  <p>User ID: {{ user().id }}</p>
-</div>
+<section>
+  <header>
+    <h2>{{ user().name }}'s Tasks</h2>
+    <button class="add-btn">+ Add Task</button>
+  </header>
+
+  <ul>
+    <li>
+      <span class="task-text">Master Angular Fundamentals</span>
+      <button class="complete-btn">&#10003;</button>
+    </li>
+    <li>
+      <span class="task-text">Build a Portfolio Project</span>
+      <button class="complete-btn">&#10003;</button>
+    </li>
+  </ul>
+</section>
