@@ -4,14 +4,11 @@
 
 <main>
     <ul>
-        <li>
-            <app-user *ngFor="let user of users" 
-            [avatar]="user.avatar" 
-            [name]="user.name" 
-            [id]="user.id"
-            (userSelected)="onUserSelected($event)">
-            </app-user>
-        </li>
+        @for (user of users; track user.id) {
+            <li>
+                <app-user [avatar]="user.avatar" [name]="user.name" [id]="user.id" (userSelected)="onUserSelected($event)"></app-user>
+            </li>
+        }   
     </ul>
 
     @if (selectedUser()) {
