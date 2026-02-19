@@ -12,6 +12,7 @@ export class User {
   avatar = input.required<string>(); 
   name = input.required<string>();
   id = input.required<string>();
+  selected = input<boolean>(false);
 
   userSelected = output<string>();
 

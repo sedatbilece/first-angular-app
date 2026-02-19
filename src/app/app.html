@@ -6,7 +6,7 @@
     <ul>
         @for (user of users; track user.id) {
             <li>
-                <app-user [avatar]="user.avatar" [name]="user.name" [id]="user.id" (userSelected)="onUserSelected($event)"></app-user>
+                <app-user [avatar]="user.avatar" [name]="user.name" [id]="user.id" [selected]="selectedUser()?.id === user.id" (userSelected)="onUserSelected($event)"></app-user>
             </li>
         }   
     </ul>

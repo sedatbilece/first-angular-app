@@ -36,6 +36,21 @@ button:active {
   transform: scale(0.98);
 }
 
+div.selected {
+  box-shadow: 0 4px 16px rgba(167, 171, 222, 0.45);
+  transform: translateY(-2px);
+}
+
+div.selected button {
+  background: linear-gradient(135deg, #C8CEEE 0%, #A7ABDE 100%);
+  color: #fff;
+}
+
+div.selected img {
+  border-color: #fff;
+  box-shadow: 0 4px 12px rgba(167, 171, 222, 0.45);
+}
+
 img {
   width: 3rem;
   height: 3rem;
