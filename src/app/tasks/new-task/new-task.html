@@ -1,0 +1,27 @@
+<div class="backdrop" (click)="onCancel()">
+  <div class="dialog" (click)="$event.stopPropagation()">
+    <h2>New Task</h2>
+
+    <form (ngSubmit)="onSave()">
+      <div class="form-group">
+        <label for="title">Title</label>
+        <input id="title" type="text" name="title" [(ngModel)]="enteredTitle" required />
+      </div>
+
+      <div class="form-group">
+        <label for="summary">Summary</label>
+        <textarea id="summary" name="summary" [(ngModel)]="enteredSummary" rows="3" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="dueDate">Due Date</label>
+        <input id="dueDate" type="date" name="dueDate" [(ngModel)]="enteredDueDate" required />
+      </div>
+
+      <div class="actions">
+        <button type="button" class="cancel-btn" (click)="onCancel()">Cancel</button>
+        <button type="submit" class="save-btn">Save</button>
+      </div>
+    </form>
+  </div>
+</div>

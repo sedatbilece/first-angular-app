@@ -1,7 +1,7 @@
 <section>
   <header>
     <h2>{{ user().name }}'s Tasks</h2>
-    <button class="add-btn">+ Add Task</button>
+    <button class="add-btn" (click)="onAddTask()">+ Add Task</button>
   </header>
 
   <ul>
@@ -12,3 +12,7 @@
     }
   </ul>
 </section>
+
+@if (isAddingTask()) {
+  <app-new-task (cancel)="onCancelAddTask()" (save)="onSaveTask($event)" />
+}
