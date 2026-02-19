@@ -1,10 +1,10 @@
 <article>
   <header>
-    <h3>Master Angular</h3>
-    <time>2026-02-18</time>
+    <h3>{{ task().title }}</h3>
+    <time>{{ task().dueDate }}</time>
   </header>
 
-  <p class="summary">Learn the fundamentals of Angular including components, templates and data binding.</p>
+  <p class="summary">{{ task().summary }}</p>
 
   <div class="actions">
     <button class="complete-btn">Complete</button>

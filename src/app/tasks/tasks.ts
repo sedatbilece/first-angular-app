@@ -1,5 +1,6 @@
-import { Component, input } from '@angular/core';
+import { Component, computed, input } from '@angular/core';
 import { Task } from './task/task';
+import { dummyTasks } from '../../dummy-tasks';
 type UserType = {
   id: string;
   name: string;
@@ -14,4 +15,6 @@ type UserType = {
 })
 export class Tasks {
   user = input.required<UserType>();
+
+  tasks = computed(() => dummyTasks.filter(task => task.userId === this.user().id));
 }

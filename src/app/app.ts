@@ -4,12 +4,7 @@ import { Header } from './header/header';
 import { User } from './user/user';
 import { Tasks } from './tasks/tasks';
 import { DUMMY_USERS } from '../dummy-user';
-
-type UserType = {
-  id: string;
-  name: string;
-  avatar: string;
-};
+import { UserType } from './user/user.model';
 
 @Component({
   selector: 'app-root',
