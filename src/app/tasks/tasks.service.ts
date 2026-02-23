@@ -2,7 +2,7 @@ import { Injectable, signal, effect } from '@angular/core';
 import { TaskType } from './task/task.model';
 
 const STORAGE_KEY = 'tasks';
-
+ 
 @Injectable({ providedIn: 'root' })
 export class TasksService {
   private tasks = signal<TaskType[]>(this.loadFromStorage());
