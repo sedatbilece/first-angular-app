@@ -1,10 +1,22 @@
-import { Injectable, signal } from '@angular/core';
+import { Injectable, signal, effect } from '@angular/core';
 import { TaskType } from './task/task.model';
-import { dummyTasks } from '../../dummy-tasks';
+
+const STORAGE_KEY = 'tasks';
 
 @Injectable({ providedIn: 'root' })
 export class TasksService {
-  private tasks = signal<TaskType[]>(dummyTasks);
+  private tasks = signal<TaskType[]>(this.loadFromStorage());
+
+  constructor() {
+    effect(() => {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(this.tasks()));
+    });
+  }
+
+  private loadFromStorage(): TaskType[] {
+    const data = localStorage.getItem(STORAGE_KEY);
+    return data ? JSON.parse(data) : [];
+  }
 
   getUserTasks(userId: string): TaskType[] {
     return this.tasks().filter((task) => task.userId === userId);
