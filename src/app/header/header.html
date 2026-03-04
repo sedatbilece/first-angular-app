@@ -1,4 +1,10 @@
 <header class="header">
+  <div class="brand">
     <img src="/angular_logo.png" alt="Angular Logo" class="angular-logo">
-    <h1>Easy Task Manager</h1>
+    <h1>Angular App</h1>
+  </div>
+  <nav class="nav-tabs">
+    <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Tasks</a>
+    <a routerLink="/calculator" routerLinkActive="active">Calculator</a>
+  </nav>
 </header>

@@ -1,0 +1,26 @@
+<div class="calculator">
+  <div class="display">{{ display() }}</div>
+  <div class="buttons">
+    <button class="btn-clear" (click)="onClear()">C</button>
+    <button class="btn-operator" (click)="onOperator('÷')">÷</button>
+    <button class="btn-operator" (click)="onOperator('×')">×</button>
+    <button class="btn-operator" (click)="onOperator('-')">-</button>
+
+    <button (click)="onDigit('7')">7</button>
+    <button (click)="onDigit('8')">8</button>
+    <button (click)="onDigit('9')">9</button>
+    <button class="btn-operator" (click)="onOperator('+')">+</button>
+
+    <button (click)="onDigit('4')">4</button>
+    <button (click)="onDigit('5')">5</button>
+    <button (click)="onDigit('6')">6</button>
+    <button class="btn-equals" (click)="onEquals()">=</button>
+
+    <button (click)="onDigit('1')">1</button>
+    <button (click)="onDigit('2')">2</button>
+    <button (click)="onDigit('3')">3</button>
+
+    <button class="btn-zero" (click)="onDigit('0')">0</button>
+    <button (click)="onDigit('.')">.</button>
+  </div>
+</div>

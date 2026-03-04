@@ -1,17 +1,22 @@
 .header {
   background: linear-gradient(135deg, #A7ABDE 0%, #C8CEEE 50%, #D8BEE5 100%);
-  padding: 1.25rem 2rem;
+  padding: 1rem 2rem;
   border-radius: 0 0 20px 20px;
   box-shadow: 0 4px 20px rgba(167, 171, 222, 0.35);
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 1rem;
+  justify-content: space-between;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
 }
 
 .angular-logo {
   width: auto;
-  height: 50px;
+  height: 45px;
   display: block;
   flex-shrink: 0;
   object-fit: contain;
@@ -19,9 +24,34 @@
 
 h1 {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 700;
   color: #fff;
   letter-spacing: 0.5px;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+.nav-tabs {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.nav-tabs a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 0.5rem 1.25rem;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: background 0.2s, color 0.2s;
+}
+
+.nav-tabs a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+.nav-tabs a.active {
+  background: rgba(255, 255, 255, 0.35);
+  color: #fff;
 }
