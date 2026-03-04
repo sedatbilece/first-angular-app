@@ -8,6 +8,7 @@ import { UserType } from './user/user.model';
 
 @Component({
   selector: 'app-root',
+  standalone: true,
   imports: [CommonModule, Header, User, Tasks],
   templateUrl: './app.html',
   styleUrl: './app.css'
